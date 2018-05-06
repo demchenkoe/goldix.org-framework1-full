@@ -1,5 +1,10 @@
 const {Action, Controller, Validator, ValidationErrors, CompositeType, Type} = require('@goldix.org/actions');
 const {Express, Rest, ErrorParser,  bodyParser, cookieParser} = require('@goldix.org/http');
+const {GraphQL, paginationExtension, typesExtension} = require('@goldix.org/graphql');
+GraphQL.extensions = {
+  pagination: paginationExtension,
+  types: typesExtension
+};
 
 let definitions = {
   utils: ['value', require('@goldix.org/utils')],
@@ -15,7 +20,7 @@ let definitions = {
   ErrorParser: ['value', ErrorParser],
   bodyParser: ['value',  bodyParser],
   cookieParser: ['value', cookieParser],
-  GraphQL: ['value', require('@goldix.org/graphql').GraphQL],
+  GraphQL: ['value', GraphQL],
   
   logger: ['factory', function (config) {
     
