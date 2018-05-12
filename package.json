@@ -1,6 +1,6 @@
 {
   "name": "@goldix.org/framework1-full",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Framework based on npm @goldix.org/* modules. \"framework1\" - is name of framework, \"full\" - say what this pack include maximum modules. Can be more custom packs in the future.",
   "main": "index.js",
   "directories": {
@@ -27,7 +27,7 @@
   "dependencies": {
     "@goldix.org/actions": "0.0.6",
     "@goldix.org/di": "0.0.3",
-    "@goldix.org/graphql": "0.0.10",
+    "@goldix.org/graphql": "0.0.11",
     "@goldix.org/http": "0.0.6",
     "@goldix.org/logger-winston-console": "0.0.4",
     "@goldix.org/logger-winston-elastic": "0.0.4",
