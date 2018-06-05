@@ -1,6 +1,6 @@
 {
   "name": "@goldix.org/framework1-full",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "Framework based on npm @goldix.org/* modules. \"framework1\" - is name of framework, \"full\" - say what this pack include maximum modules. Can be more custom packs in the future.",
   "main": "index.js",
   "directories": {

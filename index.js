@@ -1,5 +1,5 @@
-const {Action, Controller, Validator, ValidationErrors, CompositeType, Type} = require('@goldix.org/actions');
-const {Express, Rest, ErrorParser,  bodyParser, cookieParser} = require('@goldix.org/http');
+const {Action, ActionError, Controller, Validator, ValidationErrors, CompositeType, Type} = require('@goldix.org/actions');
+const {Express, Rest, ErrorParser,  express, bodyParser, cookieParser} = require('@goldix.org/http');
 const {GraphQL, paginationExtension, typesExtension} = require('@goldix.org/graphql');
 GraphQL.extensions = {
   pagination: paginationExtension,
@@ -10,11 +10,13 @@ let definitions = {
   utils: ['value', require('@goldix.org/utils')],
   TraceID: ['value', require('@goldix.org/trace-id').TraceID],
   Action: ['value', Action],
+  ActionError: ['value', ActionError],
   Controller: ['value', Controller],
   Validator: ['value', Validator],
   ValidationErrors: ['value', ValidationErrors],
   CompositeType: ['value', CompositeType],
   Type: ['value', Type],
+  express: ['value', express],
   Express: ['value', Express],
   Rest: ['value', Rest],
   ErrorParser: ['value', ErrorParser],
